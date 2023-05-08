@@ -1,0 +1,11 @@
+{
+  "Sid": "BlockAppSyncApisOtherThanPrivate",
+  "Effect": "Deny",
+  "Action": "appsync:CreateGraphQLApi",
+  "Resource": "*",
+  "Condition": {
+    "ForAnyValue:StringNotEquals:": {
+      "appsync:Visibility": "PRIVATE"
+    }
+  }
+}

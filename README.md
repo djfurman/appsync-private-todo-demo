@@ -50,6 +50,8 @@ This allows us to simulate an internal-use AppSync API to support our todos Grap
 - [ ] Setup GraphQL VPC via CloudFormation
   - [ ] Setup VPCe for GraphQL VPC
   - [ ] Set Policies for Least-privilege Access
+- [ ] [Service Control Policy (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) to block any public API creation
+  - [x] Build [SCP Enforcement Policy](./iam/private-appsync-only-scp.json)
 - [ ] Setup Todo Private API on AppSync
   - [ ] Setup Schema
   - [ ] Setup Private Visibility AppSync API via CloudFormation
@@ -63,3 +65,4 @@ This allows us to simulate an internal-use AppSync API to support our todos Grap
 ## References
 
 1. [Introducing Private APIs on AWS AppSync](https://aws.amazon.com/blogs/mobile/introducing-private-apis-on-aws-appsync/)
+1. [Using IAM policies to limit public API creation](https://docs.aws.amazon.com/appsync/latest/devguide/using-private-apis.html#blocking-public-apis)
